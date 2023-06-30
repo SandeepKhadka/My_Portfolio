@@ -1,0 +1,207 @@
+<!-- Created by Sandeep Khadka -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Sandeep Khadka" />
+    <meta name="description" content="This is my blog page"/>
+    <title>Sandeep.Portfolio</title>
+    <link rel="stylesheet" href="CSS/blog.style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,   800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="icon" href="images/sandeep-logo.png" type="imsge/gif" sizes="16*16">
+
+    <!-- internal CSS -->
+    <style>
+      .nav-links ul li.Blog::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        border-radius: 90%;
+        background: #0080ff;
+        display: block;
+        margin: 5px auto;
+      }
+      #topButton {
+        display: none;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+        cursor: pointer;
+        box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      #showButton {
+        background-color: antiquewhite;
+        color: black;
+        padding: 2px;
+        margin-bottom: 20px;
+        margin-left: 80px;
+        border-radius: 5%;
+        box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+      }
+      #hiddenText {
+        display: none;
+      }
+    </style>
+  </head>
+  <body onload="screenLoad()">
+    <div id="preloader"></div>
+    <!-- navigation section -->
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/sandeep-logo.png" alt="Logo" />
+        </a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CV.html">CV</a></li>
+            <li class="Blog"><a href="Blog.html">Blog</a></li>
+            <li><a href="Research.html">Research</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- bolg section -->
+      <section>
+        <div class="blog-container">
+          <div class="blog-elements">
+            <div class="blog-text">
+              <div class="blog-img">
+                <img class="blog-photo" src="images/internet.jpg" alt="" />
+              </div>
+              <div class="blog-para">
+                <h2 class="blog-head">Impact of Internet in my daily life</h2>
+                <p class="blog-desp">
+                  This could be said that the internet is the epitome of living
+                  in the twenty-first century. It is rapid, dynamic and has a
+                  radical capacity for transformation that will change the lives
+                  of people worldwide. It will probably be referred to as an
+                  innovative flame in the communications, IT, and computers
+                  industries. The Internet and in particular its use gives us an
+                  indication of how much the universe can be transformed with
+                  only the right number of words and how it can be associated
+                  with everyday life.<br />The internet has become more
+                  interconnected with our lives than we can imagine, thanks to
+                  technological advancements. Anything, from news to
+                  entertainment, is at our fingertips with the click of a button
+                  or tablet. We now have access to content that was previously
+                  unavailable, as well as news that would have taken days to
+                  obtain otherwise, thanks to a medium that is both immersive
+                  and insightful.<span id="dots">..</span
+                  ><span id="hiddenText">
+                    Despite popular belief that the internet has resulted in a
+                    small social existence characterized by loneliness,
+                    separation, and, ultimately, detachment from society,
+                    evidence has found that the reverse is true.Through the
+                    absence of so many territorial boundaries and the freedom of
+                    expression permitted over the network, it has become easier
+                    to communicate and engage with more like-minded individuals.
+                    It is a new form of sociability that could not have been
+                    conceived a few decades ago but is now common in culture.<br />Because
+                    of the massive movement of people to the internet, it has
+                    become increasingly clear to prospective businesses and even
+                    politicians that they need to migrate their work to an
+                    audience that can relate to them more easily. Political
+                    campaigns are now using Twitter and Facebook to disseminate
+                    information and stay in touch with the generation's youth,
+                    while businesses are finding it much easier to advertise on
+                    their own websites. Because of the internet's
+                    interconnectedness, everybody will learn anything in a brief
+                    period of time, keeping up with its multidimensionality and
+                    instructiveness.<br />The internet's arrival, like so many
+                    other items, was a double-edged sword. Despite the fact that
+                    there are more benefits than drawbacks, we cannot overlook
+                    the more negative effects. Cybercrime is a true mystery.
+                    When the number of internet users grows, so does the number
+                    of people who wish to use the network for personal benefit.
+                    Scams and frauds are widespread, as is hacking for nefarious
+                    purposes. Aside from the more serious cybercrimes, there's
+                    the less serious crime of illegally downloading music and
+                    movies, which has a negative impact on the music
+                    industry.<br />To summarize, the internet's arrival was both
+                    a blessing and a curse. The ease with which people can stay
+                    in touch and obtain information is overshadowed by the
+                    crimes committed online. The internet is the backbone of our
+                    new global society, and it's critical that we fully grasp
+                    its capabilities. Research is the only way to advance in our
+                    understanding of this technology, which is worn as a second
+                    skin by the younger generations, and, as a result, in our
+                    understanding of the world we live in.</span
+                  >
+                </p>
+                <!-- show button  -->
+                <button id="showButton" onclick="moreText()">Show more</button>
+                <script>
+                  function moreText() {
+                    var dots = document.getElementById("dots");
+                    var button = document.getElementById("showButton");
+                    var hiddenText = document.getElementById("hiddenText");
+
+                    if (dots.style.display === "none") {
+                      dots.style.display = "inline";
+                      button.innerHTML = "Show more";
+                      hiddenText.style.display = "none";
+                    } else {
+                      dots.style.display = "none";
+                      button.innerHTML = "Show less";
+                      hiddenText.style.display = "inline";
+                    }
+                  }
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer section -->
+      <section>
+        <footer id="footer">
+          <div class="footer-container">
+            <div class="footer-elements">
+              <p>Copyright &copy; 2021 Sandeep Khadka</p>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/sandeep.khadka.75436"
+                    target="_blank"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                </li>
+                <li></li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/direct/inbox/"
+                    target="_blank"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/login" target="_blank"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <!-- top button -->
+        <button id="topButton" onclick="goToTop()">Top</button>
+        <script src="JS/topButton.js"></script>
+      </section>
+    </section>
+  </body>
+</html>

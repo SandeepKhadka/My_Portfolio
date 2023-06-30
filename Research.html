@@ -1,0 +1,354 @@
+<!-- Created by Sandeep Khadka -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Sandeep Khadka" />
+    <meta name="description" content="This is my research page" />
+    <title>Sandeep.Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,   800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="icon" href="images/sandeep-logo.png" type="imsge/gif" sizes="16*16">
+
+    <!-- internal CSS -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #f0f2f5;
+      }
+      #preloader {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: url("../images/loader.gif") #fff no-repeat center;
+        z-index: 1;
+      }
+
+      p {
+        font-size: 14px;
+        color: grey;
+        line-height: 2;
+      }
+
+      * {
+        margin: 0px;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .header {
+        max-height: 70px;
+        width: 100%;
+        background-color: #ffc251;
+      }
+      nav {
+        display: flex;
+        padding: 1% 10%;
+        justify-content: space-between;
+        align-content: center;
+      }
+      nav img {
+        width: 40px;
+      }
+      .nav-links {
+        flex: 1;
+        text-align: right;
+      }
+      .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 22px;
+        position: relative;
+      }
+      .nav-links ul li a {
+        color: #000;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .nav-links ul li::after {
+        content: "";
+        width: 0%;
+        height: 3px;
+        border-radius: 90%;
+        background: #0080ff;
+        display: block;
+        margin: 5px auto;
+        transition: 300ms ease-in-out;
+      }
+
+      .nav-links ul li:hover::after {
+        width: 100%;
+      }
+      .nav-links ul li.research::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        border-radius: 90%;
+        background: #0080ff;
+        display: block;
+        margin: 5px auto;
+      }
+      .reference-elements {
+        display: flex;
+        justify-content: space-around;
+      }
+      .reference-elements .reference-images .home-ref {
+        width: 500px;
+        object-fit: contain;
+        padding-top: 15px;
+      }
+      .reference-elements .my-images .my-home {
+        width: 550px;
+        height: 250px;
+        object-fit: contain;
+        padding-top: 10px;
+      }
+      .reference-container {
+        padding: 10px;
+        margin: 0 30px;
+      }
+      .reference-elements {
+        background-color: #fff;
+        margin: auto;
+        margin-top: 30px;
+        box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);
+        padding-bottom: 20px;
+      }
+      .ref-dtl {
+        padding-left: 20px;
+        font-weight: 100px;
+        font-size: small;
+      }
+      .footer-container {
+        height: 40px;
+        background-color: #727272;
+        margin-top: 30px;
+      }
+      .footer-elements {
+        position: relative;
+      }
+      .footer-elements p {
+        padding-left: 80px;
+        color: #fff;
+        padding-top: 12px;
+      }
+      .footer-elements ul {
+        list-style-type: none;
+        position: absolute;
+        right: 100px;
+        top: 12px;
+      }
+      .footer-elements ul li {
+        display: inline;
+      }
+      .footer-elements ul li a {
+        color: #fff;
+        padding-left: 5px;
+      }
+      #topButton {
+        display: none;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body onload="screenLoad()">
+    <div id="preloader"></div>
+    <!-- navigation section -->
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/sandeep-logo.png" alt="Logo" />
+        </a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CV.html">CV</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li class="research"><a href="Research.html">Research</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <section>
+      <!-- reference section -->
+      <div class="reference-container">
+        <div class="reference-elements">
+          <div class="reference-images">
+            <a href="https://preview.colorlib.com/#jackco" target="_blank"
+              ><img class="home-ref" src="images/home.png" alt="Home reference"
+            /></a>
+            <br />
+            <h6 class="ref-dtl">Header of reference website.</h6>
+            <p class="ref-dtl">Click image for link of website.</p>
+          </div>
+          <div class="my-images">
+            <img class="my-home" src="images/my-home.png" alt="My home" />
+            <br />
+            <h6 class="ref-dtl">Header of my website.</h6>
+          </div>
+        </div>
+      </div>
+      <div class="reference-container">
+        <div class="reference-elements">
+          <div class="reference-images">
+            <a
+              href="https://www.theijbm.com/7-importance-of-technology-in-our-life-today/"
+              target="_blank"
+              ><img
+                class="home-ref"
+                style="height: 400px; width: 500px; padding-top: 25px"
+                src="images/blog-ref 1.png"
+                alt="Blog reference"
+            /></a>
+            <br />
+            <h6 class="ref-dtl">Blog of reference website.</h6>
+            <p class="ref-dtl">Click image for link of website.</p>
+          </div>
+          <div class="my-images">
+            <img
+              class="my-home"
+              style="width: 430px; height: 400px; padding-top: 0px"
+              src="images/my-blog 1.png"
+              alt="My Blog"
+            />
+            <br />
+            <h6 class="ref-dtl">Blog of my website.</h6>
+          </div>
+        </div>
+      </div>
+      <div class="reference-container">
+        <div class="reference-elements">
+          <div class="reference-images">
+            <a href="https://vertexsolution.com.np/" target="_blank"
+              ><img
+                class="home-ref"
+                src="images/footer-ref.png"
+                style="padding-top: 100px"
+                alt="Footer reference"
+            /></a>
+            <br />
+            <h6 class="ref-dtl">Footer of reference website.</h6>
+            <p class="ref-dtl">Click image for link of website.</p>
+          </div>
+          <div class="my-images">
+            <img
+              class="my-home"
+              src="images/my-footer.png "
+              style="height: 80px; object-fit: contain; padding-top: 70px"
+              alt="My Footer"
+            />
+            <br />
+            <h6 class="ref-dtl">Footer of my website.</h6>
+          </div>
+        </div>
+      </div>
+      <div class="reference-container">
+        <div class="reference-elements">
+          <div class="reference-images">
+            <a
+              href="https://www.yahoobaba.net/demos/theme/Velocity"
+              target="_blank"
+              ><img
+                class="home-ref"
+                src="images/card-ref.png"
+                alt="Box designing reference"
+            /></a>
+            <br />
+            <h6 class="ref-dtl" style="padding-top: 11px">
+              Box designing of reference website.
+            </h6>
+            <p class="ref-dtl">Click image for link of website.</p>
+          </div>
+          <div class="my-images">
+            <img
+              class="my-home"
+              src="images/my-card.png"
+              alt=" My Box designing"
+            />
+            <br />
+            <h6 class="ref-dtl" style="padding-left: 50px">
+              Box designing of my website.
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div class="reference-container">
+        <div class="reference-elements">
+          <div class="reference-images">
+            <a href="https://preview.colorlib.com/#breed2" target="_blank"
+              ><img
+                class="home-ref"
+                src="images/contact-ref.png"
+                alt="Contact reference"
+            /></a>
+            <br />
+            <h6 class="ref-dtl" style="padding-top: 11px">
+              Contact page of reference website.
+            </h6>
+            <p class="ref-dtl">Click image for link of website.</p>
+          </div>
+          <div class="my-images">
+            <img class="my-home" src="images/my-contact.png" alt="My contact" />
+            <br />
+            <h6 class="ref-dtl" style="padding-top: 11px; padding-left: 50px">
+              Contact page of my website.
+            </h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- footer section -->
+      <footer id="footer">
+        <div class="footer-container">
+          <div class="footer-elements">
+            <p>Copyright &copy; 2021 Sandeep Khadka</p>
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/sandeep.khadka.75436"
+                  target="_blank"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+              </li>
+              <li></li>
+              <li>
+                <a
+                  href="https://www.instagram.com/direct/inbox/"
+                  target="_blank"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/login" target="_blank"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <button id="topButton" onclick="goToTop()">Top</button>
+      <script src="JS/topButton.js"></script>
+    </section>
+  </body>
+</html>

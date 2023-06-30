@@ -1,0 +1,154 @@
+<!-- Created by Sandeep Khadka -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Sandeep Khadka">
+    <meta name="description" content="Welcome to my portfoli.">
+    <title>Sandeep.Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,   800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="icon" href="images/sandeep-logo.png" type="imsge/gif" sizes="16*16">
+
+    <!-- internal CSS -->
+    <style>
+    .nav-links ul li.home::after{
+        content: '';
+        width: 100%;
+        height: 3px;
+        border-radius: 90%;
+        background: #0080ff;
+        display: block;
+        margin: 5px auto;
+        
+    }
+    #topButton{
+        display: none;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+        cursor: pointer;
+    }
+    </style>
+    
+</head>
+<body onload="screenLoad()">
+    <div id="preloader"></div>
+    <!-- section for navigation bar -->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/sandeep-logo.png" alt="Logo"> </a>
+            <div class = "nav-links">
+                <ul>
+                    <li class="home"><a  href="index.html">Home</a></li>
+                    <li><a href="CV.html">CV</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <img class="cover-photo" src="images/sandeep.png" alt="My Banner Photo">
+        <div class="banner">
+            <p class="hi">Hi There </p>
+            <h1 class="my-name">I am <span style="color: white;">Sandeep</span></h1>
+            <h4 class="title">Programmer, Designer</h4>
+            <div class="btn">
+                <a href="Contact.html" class="contact-btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+    <!-- section for about me -->
+    <section id="detail">
+        <div class="story">
+            <div class="story-text card-margin">
+                <div class="story-me">
+                    <img class="photo" src="images/My Photo.jpg" alt="My Photo">
+                </div>
+                <div class="story-me">
+                    <h2 class="topic">About Me</h2>
+                    <p class="description">My name is Sandeep Khadka. I am a programmer and a designer. I am from Nepal. I create and build different responsive websites. I create the websites for different company. My websites get good response and high rating. I am also a freelancer. My aim is to work in bigger company as a professional programmer.        </p>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- section for my skills -->
+    <h2 class="my-skills">My Skills</h2>  
+    <section>
+        <div>
+        <div class="container">
+            <div class="work">
+                <div class="work-title card-margin">
+                    <div class="work-text">
+                        <div class="center"><div class="avatar">
+                            <img class="work-img" src="images/java.png" alt="JAVA">
+                        </div></div>
+                        <h4 class="head">JAVA</h4>
+                        <p>I have learned java for more than 2 years. I am very much familiar with this programming language. I create many small and big programs using java. I have worked as a programmer in java in different company. </p>
+                    </div>
+                    <div class="work-text">
+                        <div class="avatar">
+                            <img class="work-img" src="images/html.png" alt="JAVA">
+                        </div>
+                        <h4 class="head">HTML</h4>
+                        <p>I started learning html since I was twelveth. I am always fond of creating different attractive and reponsive websites. I have created many small and big websites from my learning days to now. I work as a websites designer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- section for my hobbies -->
+    <h2 class="my-skills">My hobbies</h2> 
+    <section>
+        <div>
+            <div class="box-container">
+                <div class="hobbies">
+                    <div class="hobbies-title text-margin">
+                        <div class="hobbies-text">
+                            <img class="hobby-img" src="images/travel.jpg" alt="Travelling Photo">
+                            <h4 class="subject">Travelling</h4>
+                            <p>I love travelling around the world. Travelling around the world, taking pictures, knowing the culture of different peoples gives me positive feeling and refreshment from my works. It really conects people with the nature. I have travelled many places in the world.</p>
+                        </div>
+                        <div class="hobbies-text">
+                            <img class="hobby-img" src="images/playing.jpg" alt=" Playing games Photo">
+                            <h4 class="subject">Playing games</h4>
+                            <p>Besides, travelling I love to play games. My favourite game is a football. I always enjoy playing football with my friends. I started playing football since my childhood. Playing games free us from our daily stress and makes us live energetic and healthy.</p>
+                        </div>
+                        <div class="hobbies-text">
+                            <img class="hobby-img" src="images/movies.jpg" alt="Watching movies Photo">
+                            <h4 class="subject">Watching movies</h4>
+                            <p>Movies are the part of our life. They connects our emotion to the life of different people . I love watching suspense, thriller and action movies. Watching movies gives me relief from my daily stress. Some movies even encourage me to do my best. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <section>
+        <footer id ="footer">
+            <div class = "footer-container">
+                <div class="footer-elements">
+                    <p>Copyright &copy; 2021 Sandeep Khadka</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/sandeep.khadka.75436" target="_blank"><i class="bi bi-facebook"></i></a><li>
+                        <li><a href="https://www.instagram.com/direct/inbox/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/login" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </section> 
+    <!-- top button section -->
+    <button id="topButton" onclick="goToTop()">Top</button>
+    <script src="JS/topButton.js"></script>    
+</body>
+</html

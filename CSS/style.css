@@ -1,0 +1,269 @@
+/* Starting of global CSS */
+body {
+  margin: 0;
+  background: #f0f2f5;
+}
+#preloader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/loader.gif") #fff no-repeat center;
+  z-index: 1;
+  
+}
+
+p {
+  font-size: 14px;
+  color: grey;
+  line-height: 2;
+}
+* {
+  margin: 0px;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* End of global CSS */
+
+.card-margin {
+  margin: 4% 20%;
+}
+.text-margin {
+  margin: 4% 15%;
+}
+
+/* navigation CSS starts here */
+.header {
+  min-height: 500px;
+  width: 100%;
+  background-color: #ffc251;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.cover-photo {
+  position: absolute;
+  bottom: 0;
+  right: 17%;
+  height: 80%;
+}
+nav {
+  display: flex;
+  padding: 2% 10%;
+  justify-content: space-between;
+  align-content: center;
+}
+nav img {
+  width: 40px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 22px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  border-radius: 90%;
+  background: #0080ff;
+  display: block;
+  margin: 5px auto;
+  transition: 300ms ease-in-out;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+/* navigation CSS ends here */
+
+/* banner CSS starts here */
+.banner {
+  width: 30%;
+  color: #000;
+  text-align: left;
+  padding-left: 20%;
+  padding-top: 5%;
+}
+.banner p.hi {
+  font-size: 16px;
+  border: 2px solid #db8e00;
+  display: inline;
+  padding: 10px;
+}
+.banner .my-name {
+  margin-top: 20px;
+  font-size: 62px;
+}
+
+.banner .title {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 22px;
+}
+.banner {
+  margin: 10px 0 40px;
+  font-size: 14px;
+}
+
+.banner a {
+  text-align: center;
+}
+.banner .btn {
+  text-align: center;
+  margin-top: 30px;
+}
+.contact-btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0080ff;
+  padding: 12px 34px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.banner .contact-btn:hover {
+  background-color: #003d7a;
+}
+/* banner CSS ends here */
+
+/* about me CSS starts here */
+.story-text {
+  display: flex;
+}
+
+.story .photo {
+  background-color: #ffc251;
+  padding: 5%;
+  width: 300px;
+  height: 300px;
+}
+.story .topic {
+  margin-top: 50px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  width: 50;
+  font-weight: 800;
+  padding-left: 20%;
+}
+
+.story .description {
+  margin: 0px 20px;
+  width: 80%;
+  text-align: justify;
+  padding-left: 20%;
+}
+
+/* my skill CSS starts here */
+.my-skills {
+  text-align: center;
+}
+.work-text {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 10px 30px;
+  padding: 15px 5px;
+}
+
+.work-text .avatar {
+  border: 2px solid #db8e00;
+  border-radius: 100%;
+  display: inline-flex;
+  width: 140px;
+  height: 140px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.work-title {
+  display: flex;
+  justify-content: space-between;
+}
+.work-title .head {
+  margin: 15px;
+}
+.work-img {
+  width: 100px;
+  height: 100px;
+  background-repeat: none;
+  background-size: cover;
+}
+.work-text p {
+  margin: 10px;
+}
+
+/* my hobbies CSS starts here */
+.hobbies .hobbies-title {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.hobbies-text {
+  background-color: #fff;
+  margin: 10px;
+}
+
+.hobbies-text {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 285px;
+}
+
+.hobby-img {
+  width: 285px;
+  height: auto;
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.hobbies-text .subject {
+  padding: 15px;
+}
+.hobbies-text p {
+  padding: 0px 10px;
+  text-align: justify;
+}
+
+/* footer CSS starts here */
+.footer-container {
+  height: 40px;
+  background-color: #727272;
+}
+.footer-elements {
+  position: relative;
+}
+.footer-elements p {
+  padding-left: 80px;
+  color: #fff;
+  padding-top: 12px;
+}
+.footer-elements ul {
+  list-style-type: none;
+  position: absolute;
+  right: 100px;
+  top: 12px;
+}
+.footer-elements ul li {
+  display: inline;
+}
+.footer-elements ul li a {
+  color: #fff;
+  padding-left: 5px;
+}

@@ -1,0 +1,271 @@
+<!-- Created by Sandeep Khadka -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Sandeep Khadka" />
+    <meta name="description" content="This is my CV page" />
+    <title>Sandeep.Portfolio</title>
+    <link rel="stylesheet" href="CSS/cv.style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,   800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="icon" href="images/sandeep-logo.png" type="imsge/gif" sizes="16*16">
+
+    <!-- internal CSS -->
+    <style>
+      .nav-links ul li.CV::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        border-radius: 90%;
+        background: #0080ff;
+        display: block;
+        margin: 5px auto;
+      }
+      #topButton {
+        display: none;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body onload="screenLoad()">
+    <div id="preloader"></div>
+    <!-- navigation section -->
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/sandeep-logo.png" alt="Logo" />
+        </a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="CV"><a href="CV.html">CV</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Research.html">Research</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!-- CV section  -->
+    <section class="cv-container">
+      <div class="cv-detail">
+        <div class="cv-elements">
+          <div class="cv-img">
+            <img class="cv-photo" src="images/cv.jpg" alt="CV photo" />
+          </div>
+        </div>
+        <div class="cv-elements">
+          <h1 class="cv-intro">Sandeep Khadka</h1>
+          <p class="cv-intro"><strong>Programmer, Designer</strong></p>
+        </div>
+      </div>
+
+      <div class="cv-links-container">
+        <div class="cv-links-elements">
+          <h6>Email:</h6>
+          <p>sandeepkhadka4935g@gmail.com</p>
+        </div>
+        <div class="cv-links-elements">
+          <h6>Phone no:</h6>
+          <p>+9779827129065</p>
+        </div>
+        <div class="cv-links-elements">
+          <h6>Address:</h6>
+          <p>Lakeside 6,Pokhara,Nepal</p>
+        </div>
+      </div>
+      <hr color="ededed" class="line" />
+      <div class="cv-biodata-container">
+        <div class="cv-biodata-elements">
+          <div class="cv-biodata">
+            <div class="cv-biodata-text">
+              <h4>Profile</h4>
+            </div>
+            <div class="cv-biodata-text">
+              <p class="cv-profile">
+                I am a young energetic boy of 20 years old. I am a programmer
+                and designer. I create and build different responsive websites.
+                I also worked as designer for a company for than a years. I have
+                good experience about this job. I focus my education in
+                designing and programming.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr color="ededed" class="line" />
+      <div class="cv-biodata-container">
+        <div class="cv-biodata-elements">
+          <div class="cv-biodata">
+            <div class="cv-biodata-text">
+              <h4>Education</h4>
+            </div>
+            <div class="table-wrapper">
+              <table style="width: 100%">
+                <tr>
+                  <th>Year(in B.S)</th>
+                  <th>College/School Name</th>
+                  <th>Degree Level</th>
+                  <th>Grade</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>2075</td>
+                  <td>Step By Step Secondary School</td>
+                  <td>SEE</td>
+                  <td>A+(3.8)</td>
+                  <td>Completed</td>
+                </tr>
+                <tr>
+                  <td>2075 - 2077</td>
+                  <td>Sagarmatha higher Seondary School</td>
+                  <td>NEB</td>
+                  <td>A(3.45)</td>
+                  <td>Completed</td>
+                </tr>
+                <tr>
+                  <td>2078</td>
+                  <td>Informatics College</td>
+                  <td>Bachelor</td>
+                  <td></td>
+                  <td>Running</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr color="ededed" class="line" />
+      <div class="cv-biodata-container">
+        <div class="cv-biodata-elements">
+          <div class="cv-biodata">
+            <div class="cv-biodata-text">
+              <h4>Experience</h4>
+            </div>
+            <div class="cv-biodata-text">
+              <ul>
+                <li>
+                  <p class="cv-exp">
+                    Worked as web developer in Green Edge Technology for six months.
+                  </p>
+                </li>
+                <li>
+                  <p class="cv-exp">
+                    1 year programming experience in Imperial Institution.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr color="ededed" class="line" />
+      <div class="cv-biodata-container">
+        <div class="cv-biodata-elements">
+          <div class="cv-biodata">
+            <div class="cv-biodata-text">
+              <h4>Skills</h4>
+            </div>
+            <div class="cv-biodata-text">
+              <ul class="list-container">
+                <li>
+                  <p>Web designing,</p>
+                </li>
+
+                <li>
+                  <p>Problem solving.</p>
+                </li>
+
+                <li>
+                  <p>Leadership.</p>
+                </li>
+                <li>
+                  <p>Communication.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr color="ededed" class="line" />
+      <div class="cv-biodata-container">
+        <div class="cv-biodata-elements">
+          <div class="cv-biodata">
+            <div class="cv-biodata-text">
+              <h4>Hobbies</h4>
+            </div>
+            <div class="cv-biodata-text">
+              <ul class="list-container">
+                <li>
+                  <p>Travelling.</p>
+                </li>
+
+                <li>
+                  <p>Playing games.</p>
+                </li>
+
+                <li>
+                  <p>Watching movies.</p>
+                </li>
+                <li>
+                  <p>Singing and dancing.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fotter section -->
+    <section>
+      <footer id="footer">
+        <div class="footer-container">
+          <div class="footer-elements">
+            <p>Copyright &copy; 2021 Sandeep Khadka</p>
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/sandeep.khadka.75436"
+                  target="_blank"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+              </li>
+              <li></li>
+              <li>
+                <a
+                  href="https://www.instagram.com/direct/inbox/"
+                  target="_blank"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/login" target="_blank"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- top button  -->
+      <button id="topButton" onclick="goToTop()">Top</button>
+      <script src="JS/topButton.js"></script>
+    </section>
+  </body>
+</html>
